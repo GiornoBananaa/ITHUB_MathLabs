@@ -17,7 +17,7 @@ internal static class Program
             Console.Write("Введенно не натуральное число! Введите еще раз: ");
         }
         
-        Console.WriteLine($"Квадратный корень из {integer} = {Sqrt(integer,decimalPoint)}");
+        Console.WriteLine($"Квадратный корень из {integer} = {Sqrt(integer,decimalPoint).ToString($"F{decimalPoint}")}");
     }
 
     public static double Sqrt(double integer, int decimalPoint)
